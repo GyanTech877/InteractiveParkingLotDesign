@@ -1,16 +1,14 @@
 Instructions to Run:
 
-I have created one sh file having below commands:
+1> Go inside parking_lot directory and run ./bin/setup which will install jre 8, maven and other necessary softwares and build the code
 
-mvn clean install -DskipTests
+2> run ./bin/parking_lot it will launch the application in interactive mode
 
-java -jar target/parkingLot.jar $1
+3> run ./bin/parking_lot ../functional_spec/fixtures/input.txt it will run the application by reading command from input.txt
 
-You can run the sh file it in two ways in mac:
-1) sh parking_lot
-which will be running in interactive mode
-2) sh parking_lot "filename" 
-which will be running the code after reading from "filename"
+4> run ./bin/run_functional_tests which will run functional tests. But I found some of the tests are failing as formatting error but it seeems to me formats are same, so couldn't find any format difference.
+
+Screeshots are attached inside parking_lot directory for reference.
 
 Sample Input:
 

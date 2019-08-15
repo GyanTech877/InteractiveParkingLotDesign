@@ -52,7 +52,7 @@ public class ParkingLotImpl {
 			int nextAvailableSlot=freeSlots.first();
 			slotCarMap.put(nextAvailableSlot, car);
 			freeSlots.remove(nextAvailableSlot);
-			System.out.println("Allocated Slot Number: "+(nextAvailableSlot+1));
+			System.out.println("Allocated slot Number: "+(nextAvailableSlot+1));
 		}
 	}
 
@@ -67,11 +67,11 @@ public class ParkingLotImpl {
 	}
 
 	public void getStatus(){
-		System.out.println("Slot No\tRegistration No\tColour");
+		System.out.print("Slot No.    Registration No    Colour\n");
 		for(int i=0;i<totalNoOfSlots;i++){
 			Car c = slotCarMap.get(i);
 			if(c != null){
-				System.out.println(i+1 +"\t"+c.getRegistrationNo()+"\t"+c.getColor());
+				System.out.print(i+1 +"\t    "+c.getRegistrationNo()+"      "+c.getColor()+"\n");
 			}
 		}
 	}
