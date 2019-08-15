@@ -4,9 +4,10 @@ Instructions to Run:
 
 2> run bin/parking_lot it will launch the application in interactive mode
 
-3> run bin/parking_lot functional_spec/fixtures/input.txt it will run the application by reading command from input.txt
+3> run bin/parking_lot functional_spec/fixtures/file_input.txt it will run the application by reading command from input.txt
 
-4> run ./bin/run_functional_tests which will run functional tests. But I found some of the tests are failing as formatting error but it seeems to me formats are same, so couldn't find any format difference.
+4> run ./bin/run_functional_tests which will run functional tests. 
+But I found some of the tests are failing as formatting error but it seeems to me formats are same, so couldn't find any format difference.
 
 Screeshots are attached inside parking_lot directory for reference.
 
@@ -83,9 +84,6 @@ KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333
 6
 
 Not found
-
-If you want the unit tests also to run while running the sh file just change mvn clean install -DskipTests to mvn clean install inside parking_lot sh file.
-
 
 Environment Requirements:
 1. JDK 8
