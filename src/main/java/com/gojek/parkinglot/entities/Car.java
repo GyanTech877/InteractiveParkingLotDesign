@@ -1,6 +1,6 @@
 package com.gojek.parkinglot.entities;
 
-class Car {
+public class Car {
 
 	String registrationNo;
 	String color;

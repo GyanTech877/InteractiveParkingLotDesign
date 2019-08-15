@@ -23,7 +23,7 @@ public enum Commands {
 
 	public static Commands getCommandByString(String code){
 		for(Commands c : values()){
-			if(code == c.name) return c;
+			if(code.equalsIgnoreCase(c.name)) return c;
 		}
 		return null;
 	}
