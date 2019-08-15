@@ -1,10 +1,10 @@
 Instructions to Run:
 
-1> Go inside parking_lot directory and run ./bin/setup which will install jre 8, maven and other necessary softwares and build the code
+1> Go inside parking_lot directory and run bin/setup which will install jre 8, maven and other necessary softwares and build the code
 
-2> run ./bin/parking_lot it will launch the application in interactive mode
+2> run bin/parking_lot it will launch the application in interactive mode
 
-3> run ./bin/parking_lot ../functional_spec/fixtures/input.txt it will run the application by reading command from input.txt
+3> run bin/parking_lot functional_spec/fixtures/input.txt it will run the application by reading command from input.txt
 
 4> run ./bin/run_functional_tests which will run functional tests. But I found some of the tests are failing as formatting error but it seeems to me formats are same, so couldn't find any format difference.
 
